@@ -1,0 +1,138 @@
+html{
+    --color-grey-100:rgb(233, 230, 230);
+    --color-grey-400: rgb(134, 134, 134);
+    --color-grey-600: rgb(58, 58, 58);
+    --color-grey-900: rgb(41, 41, 41);
+    --color-primary-500:rgb(167, 226, 255);
+    --color-primary-700:rgb(0, 24, 59);
+}
+
+
+body{
+    font-family:'Open Sans', sans-serif;
+    background-color: var(--color-grey-100);
+    margin: 0;
+
+}
+
+#main-header{
+    background-color: var(--color-primary-500);
+    display: flex;
+    position: fixed;
+    height: 4.8rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    font-size: 1rem;
+}
+
+#logo img{
+    height: 5rem;
+    width: 7rem;
+    margin: 0 1rem;
+    padding-right: 30px;
+}
+#main-header ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#main-header li{
+    margin: 0 1rem; 
+    transition: background-color 0.5s ease-out;
+
+}
+
+#main-header a:hover{
+    color: aliceblue;
+}
+#main-header li:hover{
+    background-color: var(--color-primary-700) ;
+}
+
+#side-menu{
+    width: 1rem;
+    height: 1rem;
+    color: black;
+}
+
+.container-text-center{
+    background-color: var(--color-primary-700);
+    text-align: center;
+    color: aliceblue;
+    margin: 0;
+    padding: 10%;
+
+}
+#center{
+    margin: 0 20px;
+    padding-top: 3rem;
+    
+}
+
+.container{
+    margin: 0;
+    padding: 6rem 2rem;
+
+}
+
+
+#section{
+    padding: 2rem;
+  
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 5%;
+
+}
+
+h2{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+#downloads a{
+    color: blue;
+
+}
+
+
+
+
+
+
+/*max widh-> desktop to mobile*/
+@media(max-width: 940px){
+
+
+    #main-header nav {
+        display: none;
+    
+    }
+    .menu-btn{
+        display: flex;
+    }
+        main h1{
+            font-size: 1.5rem;
+        }
+    
+        #latest-products ul{
+             grid-template-columns: 100%;
+    
+        }
+      
+    }
+    
