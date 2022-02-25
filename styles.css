@@ -5,7 +5,7 @@ html{
     --color-grey-900: rgb(41, 41, 41);
     --color-primary-500:rgb(158, 248, 218);
     --color-primary-700:rgb(1, 16, 39);
-    --color-effect-blue: blue; 
+    --color-effect-blue: rgb(0, 162, 255); 
 }
 
 
@@ -17,7 +17,7 @@ body{
 }
 
 #main-header{
-    background-color: var(--color-primary-500);
+    background-color: white;
     display: flex;
     position: fixed;
     height: 4.8rem;
@@ -37,9 +37,8 @@ a{
 
 #logo img{
     height: 5rem;
-    width: 7rem;
-    margin: 0 1rem;
-    padding-right: 30px;
+    margin: 0 2rem;
+    padding-bottom: 15px;
 }
 #main-header ul{
     list-style: none;
@@ -116,7 +115,7 @@ h2{
 
 
 /*max widh-> desktop to mobile*/
-@media(max-width: 940px){
+/* @media(max-width: 940px){
 
 
     #main-header nav {
@@ -135,5 +134,5 @@ h2{
     
         }
       
-    }
+    } */
     
