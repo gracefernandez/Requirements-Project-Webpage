@@ -4,8 +4,9 @@ html{
     --color-grey-600: rgb(58, 58, 58);
     --color-grey-900: rgb(41, 41, 41);
     --color-primary-500:rgb(158, 248, 218);
-    --color-primary-700:rgb(0, 10, 24);
+    --color-primary-700:rgb(0, 0, 0);
     --color-effect-blue: rgb(0, 162, 255); 
+    --color-effect-pink: rgb(250, 149, 171);
 }
 
 
@@ -13,7 +14,14 @@ body{
     font-family:'Open Sans', sans-serif;
     background-color: var(--color-grey-100);
     margin: 0;
+    background-image: url(/images/work-out-clip-art.png);
+    font-style: bold;
+    color: whitesmoke;
 
+
+}
+h4{
+    color: var(--color-effect-pink);
 }
 
 #main-header{
@@ -29,6 +37,8 @@ body{
 }
 
 
+
+
 a{
     text-decoration: none;
     color: rgb(37, 37, 37);
@@ -38,7 +48,8 @@ a{
 #logo img{
     height: 5rem;
     margin: 0 2rem;
-    padding-bottom: 15px;
+    padding: 1rem;
+    align-content: center;
 }
 #main-header ul{
     list-style: none;
@@ -60,10 +71,10 @@ a{
 }
 
 .menu-btn {
-    display: none;
-    display:  flex;
-    margin: 0;
-    padding: 0 ;
+    display: flex;
+    margin-right: 2rem;
+    padding:0;
+
 
 }
 
@@ -83,6 +94,7 @@ a{
     left: 0;
     display: none;
 }
+
 #side-drawer:target{
     display: block;
 }
@@ -124,13 +136,26 @@ a{
 #center{
     margin: 0 20px;
     padding-top: 3rem;
+    width: 100%;
     
 }
 
 .container{
+    align-content: center;
     margin: 0;
     padding: 6rem 2rem;
+    background:linear-gradient(90deg,rgba(24, 24, 24, 0.774), rgba(25,29,29));
 
+    
+}
+
+.container h2{
+    color: var(--color-grey-100);
+    text-shadow: 2px 2px 4px var(--color-effect-blue);
+}
+
+#downloads a{
+    color: var(--color-effect-blue);
 }
 
 
@@ -138,27 +163,74 @@ a{
     padding: 2rem;
   
 }
+
 .row{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin-right: 25%;
     margin-left: 25%;
     margin-top: 5%;
-
-}
+}    
 
 h2{
     font-weight: bold;
-    font-size: 1.8rem;
-}
-
-#downloads a{
-    color: var(--color-effect-blue);
-
+    font-size: 1.9rem;
 }
 
 
+#models{
+    margin: 0;
+    padding: 0 ;
+    align-content: center;
+    
+}
 
+#project-p{
+    margin: 0;
+    padding: 0 ;
+    align-content: center;
+    
+}
+
+
+
+#Team ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+    
+    list-style: circle;
+   
+}
+
+
+
+
+footer{
+    padding: 36px 0;
+    color: whitesmoke;
+   
+}
+
+footer ul{
+    display: flex;
+    justify-content:center ;
+    list-style: none;
+}
+
+
+footer li{
+    width: 80px;
+    height: 80px;
+    margin: 0 50px;
+}
+
+footer img{
+    width: 100%;
+    height: 100%;
+
+}
 
 
 
@@ -176,14 +248,17 @@ h2{
         display: flex;
     
     }
-        main h1{
+
+    main h1{
             font-size: 1.5rem;
         }
     
-        #latest-products ul{
+    #latest-products ul{
              grid-template-columns: 100%;
     
         }
+    
+ 
       
-    }
+}
     
