@@ -99,6 +99,7 @@ a{
     left: 0;
     display: none;
     
+    
 }
 
 #side-drawer:target{
@@ -201,22 +202,23 @@ h2{
 
 #time-effort img {
 
-    width: 37rem;
-    height: 28rem;
+    width:100%;
+    height: auto;
 
 }
 
 
 
 
-
-#Team ul {
+.group {
     display: grid;
     grid-template-columns: 1fr 1fr;
- 
-    
     list-style: circle;
-   
+    margin: 0;
+    padding: 0;
+}
+.group li{
+    margin:1.3rem;
 }
 
 
@@ -263,6 +265,9 @@ footer img{
     .menu-btn{
         display: flex;
     
+    }
+    .menu-btn img{
+        margin-left:3rem;
     }
 
     main h1{
